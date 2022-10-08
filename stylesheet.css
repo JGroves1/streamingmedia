@@ -1,24 +1,101 @@
-/* color palette: */
+/* color palette: 
+darkest navy #020659 | plum #590242 | royal blue #2104D9
+navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB 
+*/
 
 /* css TOC: 
-    GLOBAL -- line 
+    GLOBAL -- line 18
     NAV -- line 
+    HEADER -- line
     TRENDING -- line 
     USER PLAYLISTS -- line
     CURATED -- line
     FOOTER -- line 
     CLASSES -- line 
     IDS -- line 
+    MEDIA QUERIES -- line
 */
 
 /* ----- GLOBAL ----- */
+    html {
+        background-color: #020659;
+        color: #ffffff;
+        font-family: 'Raleway', 'Optima', sans-serif;
+        text-align: center;
+    }
 
+    body {
+        width: 375px;
+        margin: 0;
+        display: auto;
+    }
+
+    h1, h2, h3 {
+        text-transform: uppercase;
+    }
+
+    h1, h2 {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #590242;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+
+    dt {
+        text-transform: uppercase;
+        font-size: 16pt;
+        font-weight: lighter;
+        color: #590242;
+    }
+
+    dd {
+        font-size: 16pt;
+        color: #590242;
+    }
+
+
+/* ----- HEADER ----- */
+    header {
+        text-align: left;
+    }
+
+    header h2 {
+        color: #ffffff;
+    }   
+
+    header p {
+            font-size: 20pt;
+    }
 
 /* ----- NAV ----- */
+    nav h2 {
+        visibility: hidden;
+    }
 
+    nav ul li:first-child {
+        text-transform: uppercase;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
 
 /* ----- TRENDING ----- */
-
+    #trending h3 {
+        color: #590242;
+    }
 
 /* ----- USER PLAYLISTS ----- */
 
@@ -26,7 +103,26 @@
 /* ----- CURATED ----- */
 
 
-/* ----- CLASSES ----- */
+/* ----- FOOTER ----- */
+    footer {
+        color: #590242;
+        font-weight: bold;
+        font-size: 10pt;
+    }
 
+/* ----- CLASSES ----- */
+    .more {
+        font-size: 14pt;
+        font-weight: bold;
+    }
 
 /* ----- IDS ----- */
+
+
+/* ----- MEDIA QUERIES ----- */
+
+    @media screen and (min-width: 834px) {
+        body {
+            width: 834px;
+        }
+    }

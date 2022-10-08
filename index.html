@@ -10,12 +10,11 @@
 
 <body>
     <h1>MuzakMaker</h1>
-
-        <!--I genuinely don't know what this little bit is considered sectioning-wise-->   
-        <section>
+  
+        <header>
             <h2>Smooth Jazz</h2>
             <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-        </section>
+        </header>
         
         <nav>
             <h2>Navigation</h2>
@@ -28,7 +27,7 @@
                 </ul>
         </nav>
         
-        <section>
+        <section id="trending">
             <h2>Trending Songs</h2>
             <div>
                 <h3>Aloma</h3>
@@ -75,77 +74,83 @@
                 </audio>
             </div>
 
-            <p>More trending</p>
+            <p class="more">More trending</p>
         </section>
 
-        <section>
+        <section id="playlists">
             <h2>Your Playlists</h2>
-            <div>
-                <img src="images/best-of-2020-cover.png" alt="">
-                <h3>Best of 2020</h3>
-                <p>The music that got you through the lock down.</p>
-            </div>
 
-            <div>
-                <img src="images/pumpkin-spice-cover.png" alt="">
-                <h3>Pumpkin Spice</h3>
-                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-            </div>
+            <dl>
+                <div>
+                    <img src="images/best-of-2020-cover.png" alt="">
+                    <dt>Best of 2020</dt>
+                    <dd>The music that got you through the lock down.</dd>
+                </div>
 
-            <div>
-                <img src="images/quite-storm-cover.png" alt="">
-                <h3>Quiet Storm</h3>
-                <p>Slow tempos and relaxed rhythms.</p>
-            </div>
+                <div>
+                    <img src="images/pumpkin-spice-cover.png" alt="">
+                    <dt>Pumpkin Spice</dt>
+                    <dd>Creamy and spicy, just like your favorite autumnal latte.</dd>
+                </div>
 
-            <div>
-                <img src="images/smooth-jazz-cover.png" alt="">
-                <h3>Smooth Jazz</h3>
-                <p>The pioneers of smooth jazz</p>
-            </div>
+                <div>
+                    <img src="images/quite-storm-cover.png" alt="">
+                    <dt>Quiet Storm</dt>
+                    <dd>Slow tempos and relaxed rhythms.</dd>
+                </div>
 
-            <div>
-                <img src="images/smooth-study-cover.png" alt="">
-                <h3>Smooth Study</h3>
-                <p>Background music to keep you going while you study.</p>
-            </div>
+                <div>
+                    <img src="images/smooth-jazz-cover.png" alt="">
+                    <dt>Smooth Jazz</dt>
+                    <dd>The pioneers of smooth jazz</dd>
+                </div>
 
-            <p>All your playlists</p>
+                <div>
+                    <img src="images/smooth-study-cover.png" alt="">
+                    <dt>Smooth Study</dt>
+                    <dd>Background music to keep you going while you study.</dd>
+                </div>
+            </dl>
+
+            <p class="more">All your playlists</p>
         </section>
 
-        <section>
+        <section id="curated">
             <h2>Curated Playlists</h2>
-            <div>
-                <img src="images/Boozey-brunch-cover.png" alt="">
-                <h3>Boozey Brunch</h3>
-                <p>Light up the afternoon with these energetic hits.</p>
-            </div>
 
-            <div>
-                <img src="images/dinner-party-cover.png" alt="">
-                <h3>Dinner Party</h3>
-                <p>Background music to give your party life, but allow your guests to chat.</p>
-            </div>
+            <dl>
+                <div>
+                    <img src="images/Boozey-brunch-cover.png" alt="">
+                    <dt>Boozey Brunch</dt>
+                    <dd>Light up the afternoon with these energetic hits.</dd>
+                </div>
 
-            <div>
-                <img src="images/mellow-cover.png" alt="">
-                <h3>Mellow</h3>
-                <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
-            </div>
+                <div>
+                    <img src="images/dinner-party-cover.png" alt="">
+                    <dt>Dinner Party</dt>
+                    <dd>Background music to give your party life, but allow your guests to chat.</dd>
+                </div>
 
-            <div>
-                <img src="images/jazz-and-chill-cover.png" alt="">
-                <h3>Jazz and Chill</h3>
-                <p>Set the mood with these silky sounds.</p>
-            </div>
+                <div>
+                    <img src="images/mellow-cover.png" alt="">
+                    <dt>Mellow</dt>
+                    <dd>Relax after a stressful day with this collection of extra smooth jazz.</dd>
+                </div>
 
-            <div>
-                <img src="images/smooth-saxophone-cover.png" alt="">
-                <h3>Jazz Saxophone</h3>
-                <p>The greatest collection of your sax favorites.</p>
-            </div>
+                <div>
+                    <img src="images/jazz-and-chill-cover.png" alt="">
+                    <dt>Jazz and Chill</dt>
+                    <dd>Set the mood with these silky sounds.</dd>
+                </div>
 
-            <p>More curated</p>
+                <div>
+                    <img src="images/smooth-saxophone-cover.png" alt="">
+                    <dt>Jazz Saxophone</dt>
+                    <dd>The greatest collection of your sax favorites.</dd>
+                </div>
+            </dl>
+
+            <p class="more">More curated</p>
         </section>
         
         <footer><small>Copyright 2022 Smooth Jazz</small></footer>
