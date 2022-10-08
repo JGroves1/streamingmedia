@@ -20,14 +20,13 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     html {
         background-color: #020659;
         color: #ffffff;
-        font-family: 'Raleway', 'Optima', sans-serif;
+        font-family: Raleway, Optima, sans-serif;
         text-align: center;
     }
 
     body {
         width: 375px;
-        margin: 0;
-        display: auto;
+        margin: 0 auto;
     }
 
     h1, h2, h3 {
@@ -63,6 +62,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     dd {
         font-size: 16pt;
         color: #590242;
+        margin-left: 0;
     }
 
 
