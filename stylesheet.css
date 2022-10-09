@@ -376,7 +376,6 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
         nav {
             width: 834px;
-            height: 65px;
         }
 
         nav ul {
@@ -387,10 +386,12 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
 
+        nav a {
+            padding: 10px;
+        }
+
         [href="#home"] {
             position: static;
-            height: 100%;
-            padding-top: 20px;
         }
 
         label span, input {
