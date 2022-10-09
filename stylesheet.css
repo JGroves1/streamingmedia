@@ -392,6 +392,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
         [href="#home"] {
             position: static;
+            padding: 11.5px;
         }
 
         label span, input {
