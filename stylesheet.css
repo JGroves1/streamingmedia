@@ -4,19 +4,19 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 */
 
 /* css TOC: 
-    GLOBAL -- line 18
-    NAV -- line 
-    HEADER -- line
-    TRENDING -- line 
-    USER PLAYLISTS -- line
-    CURATED -- line
-    FOOTER -- line 
-    CLASSES -- line 
-    IDS -- line 
-    MEDIA QUERIES -- line
+    GLOBAL -- line 19
+    HEADER -- line 78
+    NAV -- line 90
+    TRENDING -- line 196
+    USER PLAYLISTS -- line 252
+    CURATED -- line 286
+    FOOTER -- line 320
+    CLASSES -- line 331
+    IDS -- line 367
+    MEDIA QUERIES -- line 370
 */
 
-/* ----- GLOBAL ----- */
+/* ---------- GLOBAL ---------- */
     html {
         background-color: #020659;
         color: #ffffff;
@@ -75,7 +75,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }
 
 
-/* ----- HEADER ----- */
+/* ---------- HEADER ---------- */
     header {
         background-image: linear-gradient(to right, #030A8C, #000000);
         position: relative;
@@ -87,7 +87,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
             font-size: 20px;
     }
 
-/* ----- NAV ----- */
+/* ---------- NAV ---------- */
     nav {
         width: 375px;
         background-color: #030A8C;
@@ -193,7 +193,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         top: 0;
     }
 
-/* ----- TRENDING ----- */
+/* ---------- TRENDING ---------- */
 
     #trending h3, #trending dt, #trending dd {
         color: #590242;
@@ -249,7 +249,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         background: #020659;
     }
 
-/* ----- USER PLAYLISTS ----- */
+/* ---------- USER PLAYLISTS ---------- */
     #playlists div {
         background-color: #2699FB;
         text-align: center;
@@ -283,7 +283,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         background: #ffffff;
     }
 
-/* ----- CURATED ----- */
+/* ---------- CURATED ---------- */
     #curated div {
         background-color: #030A8C;
         text-align: center;
@@ -299,6 +299,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         height: 0px;
         margin: 0;
     }
+
     #curated ::-webkit-scrollbar {
         width:15px;
     }
@@ -316,7 +317,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         background: #ffffff;
     }
 
-/* ----- FOOTER ----- */
+/* ---------- FOOTER ---------- */
     footer {
         background-color: #ffffff;
         color: #590242;
@@ -327,7 +328,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         padding-bottom: 25px;
     }
 
-/* ----- CLASSES ----- */
+/* ---------- CLASSES ---------- */
     .more {
         font-size: 14px;
         font-weight: bold;
@@ -363,13 +364,17 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         width: 350px;
     }
 
-/* ----- IDS ----- */
+/* ---------- IDS ---------- */
 
 
-/* ----- MEDIA QUERIES ----- */
+/* ---------- MEDIA QUERIES ---------- */
 
     @media screen and (min-width: 834px) {
         body {
+            width: 834px;
+        }
+
+        nav {
             width: 834px;
         }
 
@@ -383,5 +388,37 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
         label span, input {
             display: none;
+        }
+
+        #playlists, #curated {
+            width: 50%;
+            float: left;
+        }
+
+        #curated {
+            margin-top: 23px;
+        }
+
+        #playlists .scroll, #curated .scroll {
+            height: 500px;
+            display: grid;
+            grid-template-columns: 417px;
+            grid-template-rows: repeat(5, 1fr);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        h3+img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .more {
+            float: right;
+            margin-right: 15px;
+        }
+        
+        footer {
+            clear: both;
         }
     }
