@@ -27,6 +27,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     body {
         width: 375px;
         margin: 0 auto;
+        background-color: #ffffff;
     }
 
     h1, h2, h3 {
@@ -34,7 +35,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }
 
     h1, h2 {
-        font-size: 20pt;
+        font-size: 20px;
         font-weight: bold;
     }
 
@@ -44,24 +45,22 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }
 
     h3 {
-        font-size: 16pt;
+        font-size: 16px;
         font-weight: bold;
     }
 
     p {
-        font-size: 14pt;
+        font-size: 14px;
     }
 
     dt {
         text-transform: uppercase;
-        font-size: 16pt;
+        font-size: 16px;
         font-weight: lighter;
-        color: #590242;
     }
 
     dd {
-        font-size: 16pt;
-        color: #590242;
+        font-size: 16px;
         margin-left: 0;
     }
 
@@ -73,6 +72,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
 /* ----- HEADER ----- */
     header {
+        background-image: linear-gradient(to right, #030A8C, #000000);
         text-align: left;
     }
 
@@ -81,7 +81,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }   
 
     header p {
-            font-size: 20pt;
+            font-size: 20px;
     }
 
 /* ----- NAV ----- */
@@ -187,11 +187,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }
 
 /* ----- TRENDING ----- */
-    #trending {
-        background-color: #ffffff;
-    }
-
-    #trending h3, #trending p {
+    #trending h3, #trending dt, #trending dd {
         color: #590242;
     }
 
@@ -206,30 +202,123 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     }
 
     audio::-webkit-media-controls-enclosure {
-        background-color: rgba(255, 255, 255, alpha.5);
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    #trending ::-webkit-scrollbar {
+        width: 15px;
     }
     
-/* ----- USER PLAYLISTS ----- */
+    #trending ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #590242;
+    }
 
+    #trending ::-webkit-scrollbar-thumb {
+        background: #590242;
+        border-radius: 5px;
+    }
+
+    #trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
+
+/* ----- USER PLAYLISTS ----- */
+    #playlists div {
+        background-color: #2699FB;
+    }
+
+    #playlists section {
+        background-color: #0D8DFB;
+    }
+
+    #playlists h3 {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    #playlists ::-webkit-scrollbar {
+        width:15px;
+    }
+
+    #playlists ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+
+    #playlists ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+
+    #playlists ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
 
 /* ----- CURATED ----- */
+    #curated div {
+        background-color: #030A8C;
+    }
 
+    #curated section {
+        background-color: #020873;
+    }
+
+    #curated h3 {
+        visibility: hidden;
+        height: 0px;
+    }
+    #curated ::-webkit-scrollbar {
+        width:15px;
+    }
+
+    #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+
+    #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+
+    #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
 
 /* ----- FOOTER ----- */
     footer {
         background-color: #ffffff;
         color: #590242;
         font-weight: bold;
-        font-size: 10pt;
+        font-size: 10px;
     }
 
 /* ----- CLASSES ----- */
     .more {
-        font-size: 14pt;
+        font-size: 14px;
         font-weight: bold;
         background-color: #590242;
         padding: 10px 30px;
         border-radius: 5px;
+    }
+
+    .scroll {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .scroll section {
+        margin: 10px;
+        position: relative;
+    }
+
+    .scroll div {
+        position: absolute;
+        top: 251px;
+        background-color: rgba(255, 255, 255, .75);
+        padding: 5px;
+        height: 50px;
+        width: 350px;
     }
 
 /* ----- IDS ----- */
