@@ -376,15 +376,15 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
         nav {
             width: 834px;
+            height: 65px;
         }
 
-        ul {
+        nav ul {
             overflow: visible;
             position: absolute;
             top: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            width: 834px;
         }
 
         [href="#home"] {
