@@ -195,6 +195,20 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         color: #590242;
     }
 
+    audio::-webkit-media-controls-mute-button {
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+    audio::-webkit-media-controls-play-button {
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+    audio::-webkit-media-controls-enclosure {
+        background-color: rgba(255, 255, 255, alpha.5);
+    }
+    
 /* ----- USER PLAYLISTS ----- */
 
 
