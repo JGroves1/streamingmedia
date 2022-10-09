@@ -384,10 +384,19 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
             top: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            width: 834px;
+        }
+
+        [href="#home"] {
+            position: static;
+            height: 100%;
+            padding-top: 20px;
         }
 
         label span, input {
             display: none;
+            margin: 0;
+            padding: 0;
         }
 
         #playlists, #curated {
