@@ -21,7 +21,6 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         background-color: #020659;
         color: #ffffff;
         font-family: Raleway, Optima, sans-serif;
-        text-align: center;
     }
 
     body {
@@ -49,10 +48,6 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         font-weight: bold;
     }
 
-    p {
-        font-size: 14px;
-    }
-
     dt {
         text-transform: uppercase;
         font-size: 16px;
@@ -73,12 +68,10 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 /* ----- HEADER ----- */
     header {
         background-image: linear-gradient(to right, #030A8C, #000000);
-        text-align: left;
-    }
-
-    header h2 {
-        color: #ffffff;
-    }   
+        position: relative;
+        top: 30px;
+        padding: 25px 30px 5px;
+    } 
 
     header p {
             font-size: 20px;
@@ -96,16 +89,20 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 
     nav a {
         display: block;
-        padding: 20px;
+        padding: 20px 20px;
     }
 
     nav h2 {
         visibility: hidden;
-        height: 1px;
+        height: 0;
+        margin: 0;
     }
 
     nav ul {
         list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
         background-color: #2104D9;
         max-height: 0;
@@ -225,6 +222,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 /* ----- USER PLAYLISTS ----- */
     #playlists div {
         background-color: #2699FB;
+        text-align: center;
     }
 
     #playlists section {
@@ -256,6 +254,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
 /* ----- CURATED ----- */
     #curated div {
         background-color: #030A8C;
+        text-align: center;
     }
 
     #curated section {
@@ -289,6 +288,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         color: #590242;
         font-weight: bold;
         font-size: 10px;
+        text-align: center;
     }
 
 /* ----- CLASSES ----- */
@@ -298,6 +298,10 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         background-color: #590242;
         padding: 10px 30px;
         border-radius: 5px;
+    }
+
+    .more:hover {
+        background-color: #020659;
     }
 
     .scroll {
