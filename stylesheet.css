@@ -69,6 +69,10 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
         margin-top: 60px;
     }
 
+    dl {
+        margin-top: 5px;
+    }
+
 
 /* ----- HEADER ----- */
     header {
@@ -259,6 +263,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     #playlists h3 {
         visibility: hidden;
         height: 0px;
+        margin: 0;
     }
 
     #playlists ::-webkit-scrollbar {
@@ -293,6 +298,7 @@ navy #020873 | dk blue #030A8C | lt blue #2699FB | azure #0D8DFB
     #curated h3 {
         visibility: hidden;
         height: 0px;
+        margin: 0;
     }
     #curated ::-webkit-scrollbar {
         width:15px;
